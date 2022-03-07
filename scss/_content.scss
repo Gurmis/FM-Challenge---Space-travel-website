@@ -1,0 +1,39 @@
+//-------------CONTENT----------------
+@each $page, $color in $page-colors {
+    .#{$page} main {
+        background: $color;
+        border-top: em(1) solid darken( $color, 15% );
+    }
+    
+    .#{$page} h1.shadow {
+        text-shadow: em(-1, 75) em(1, 75) darken( $color, 15% );
+    }
+    
+    .#{$page} h2.shadow {
+        text-shadow: em(-1, 24) em(1, 24) darken( $color, 15% );
+    }
+}
+
+
+.bigass {
+    max-width: 100%;
+    @include rounded(0.2em);
+    vertical-align: bottom;
+    border-radius: 0.2em 0.2em 0 0;
+}
+
+
+@media (max-width: 600px) {
+    .home, .gallery, .blog, .contact, .buttons { font-size: 90%; }
+     
+}
+
+@media (max-width: 400px) {
+    .home, .gallery, .blog, .contact, .buttons { font-size: 80%; }
+    
+}
+
+@media (max-width: 360px) {
+    .home, .gallery, .blog, .contact, .buttons { font-size: 75%; }
+    
+}

@@ -1,0 +1,44 @@
+//------ FOOTER -------------------
+
+.pre-footer {
+    padding: 3em 1em 4em;
+    font-size: 90%;
+    line-height: 1.4;
+    
+    h3 {
+        font-size: 1.5em;
+    }
+    p {
+        padding-bottom: 1.2em;
+    }
+}
+
+
+
+footer {
+    background: darken( $color-body, 3%);
+    font-size: 70%;
+    padding: 1.3em 1em;
+    color: $color-footer;
+    line-height: 1.5;
+    
+    span, a {
+        color: rgba( $color-footer, 0.5 );
+    }
+    
+    span {
+        margin-left: 1.2em;
+    }
+    
+    a {
+        border-bottom: 1px solid;
+        transition: .5s ease-in-out;
+        
+        &:hover, &:focus {
+            color: rgba( $color-footer, 0.9 );
+        }
+        
+    }
+    
+    
+}

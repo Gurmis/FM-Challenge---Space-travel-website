@@ -1,0 +1,71 @@
+//------ MAIN COLOR -------------------
+$color-body:    #363842;
+$color-home:    #8FD2D1;
+$color-gallery: #FCBD24;
+$color-blog:    #019DCD;
+$color-contact: #FD685B;
+$color-buttons: #a78c8c;
+
+$page-colors:   (
+                'home':     $color-home,
+                'gallery':  $color-gallery,
+                'blog':     $color-blog,
+                'contact':  $color-contact,
+                'buttons':  $color-buttons
+    );
+
+
+//------------BUTTONS------------------
+$btn-red: $color-contact;
+$btn-green: #39ae90;
+$btn-blue: #6c8ace;
+$btn-white: white;
+$btn-yellow: #fecd5e;
+
+$button-colors:   ( 
+                'red':      $color-contact,
+                'green':    #39ae90,
+                'blue':     #6c8ace,
+                'white':    #fff,
+                'yellow':   #fecd5e
+    ); 
+
+
+
+
+//----- HEADER COLOR -----------------
+//----- FOOTER COLOR -----------------
+
+
+
+//----- FONT -------------------------
+
+
+$color-text:    #fff;
+$color-nav:     #777;
+$color-footer:  #8C95AD;
+
+$font-family-sans: Montserrat, sans-serif;
+$font-family-serif: 'Big Caslon', Georgia, serif;
+
+
+//----- BUTTONS ----------------------
+$btn-main: rgba(253, 104, 91, 1);
+$btn-second: rgba(57, 174, 144, 1);
+
+
+//---------BREAKPOINTS-----------------
+$breakpoints: (
+    '400': 400px,
+    '600': 600px,
+
+
+);
+
+
+
+//------------------------
+
+$enable-rounded: true;
+$debug: false;
+

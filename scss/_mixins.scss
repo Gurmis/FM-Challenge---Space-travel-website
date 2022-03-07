@@ -1,0 +1,68 @@
+//------ MIXINS -------------------
+@mixin box-sizing( $value: border-box ) {
+-webkit-box-sizing: $value;
+   -moz-box-sizing: $value;
+        box-sizing: $value;   
+}
+
+@mixin container( $width ) {
+    max-width: $width;
+    margin: 0 auto;
+}
+
+@mixin clearfix {
+    &:before,
+    &:after {
+      content: "";
+      display: table;
+    } 
+    &:after {
+        clear: both;
+    }
+}
+
+%button { 
+    display: inline-block;
+    padding: 1.2em 1.8em;
+    border-radius: 0.4em;
+            
+    font-size: 90%;
+    color: $color-text;
+    text-transform: uppercase;
+    
+    
+    border: none;
+    cursor: pointer;
+}
+
+@mixin rounded( $border-radius: em(5) ) {
+    @if( $enable-rounded ) {
+        border-radius: $border-radius;
+    }
+    @else {
+        border-radius: none;
+    }
+}
+
+@mixin font-size( $target, $context: 16 ) {
+    font-size: ( $target / $context ) + em;
+    
+}
+
+@function em( $target, $context: 16 ) {
+    @return ( $target / $context ) + em;
+    
+}
+
+@mixin selection {
+    ::-moz-selection { @content }
+    ::selection { @content }
+}
+
+@mixin color-fallback($color, $alfa, ) {
+    color: $color;
+    color: rgba( $color, $alfa);
+}
+
+
+

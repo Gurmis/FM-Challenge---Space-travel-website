@@ -1,0 +1,43 @@
+//----------------HEADER----------------
+.site-header {
+    background: #fff;
+//    position: fixed;
+//    width: 100%;
+    
+    
+}
+
+.menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    
+    li, a {
+        display: inline-block;
+        
+        }
+        
+    a {
+        color: $color-nav;
+        @include font-size(15); 
+        
+        padding: 2em 1em;
+        
+        &:hover, &:focus, {
+            color: lighten( $color-nav, 20% );
+            transition: .2s all ease-in-out;
+        }
+        
+        
+    }
+}
+
+a {
+        
+    .home .active &     { color: darken( $color-home, 15% ) };
+    .gallery .active &  { color: darken( $color-gallery, 15% ) };
+    .blog .active &     { color: darken( $color-blog, 15% ) };
+    .contact .active &  { color: darken( $color-contact, 15% ) };
+    .buttons .active &  { color: darken( $color-buttons, 15% ) };
+}
+

@@ -1,0 +1,61 @@
+//------ BUTTONS -------------------
+
+//.btn-red {
+//    @extend %button;
+//    background: $btn-red;
+//    
+//    &:hover, &:focus {
+//        background: transparentize( $btn-red, 0.15 );
+//    }
+//}
+
+
+@each $button, $color in $button-colors {
+    .btn-#{$button} { 
+        @extend %button;
+        background: $color;
+        
+        &:hover, &:focus {
+            background: transparentize( $color, 0.25 );
+        }
+        
+        @if( $button == 'white') {
+            padding: 0.8em 1.5em;
+            color: black;
+        }
+        @else {   
+        text-shadow: em(1) em(1) 0 darken( $color, 15% );
+        }
+        }
+}
+
+.buttons {
+     .btns {
+        max-width: em(696);
+        margin: 0 auto;
+        
+        a {
+            width: 49%;
+            margin: 0.5% 0.25%;
+        }
+        
+    }
+    
+    
+}
+
+$icons: (   "eye":      "\f112",
+            "start":    "\f12e", 
+            "stop":     "\f12f");
+
+@each $name, $glyph in $icons {
+  .icon-#{$name}:before {
+    display: inline-block;
+    font-family: "Icon Font";
+    content: $glyph;
+  }
+}
+
+
+
+  
