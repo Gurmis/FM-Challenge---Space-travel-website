@@ -1,0 +1,66 @@
+main.crew {
+
+    
+
+    .role {
+        opacity: 0.5;
+        text-transform: uppercase;
+        font-weight: 400;
+        
+        margin-top: 154px;
+    }
+
+    .name {
+        font-style: normal;
+        font-weight: 400;
+        text-transform: uppercase;
+
+        margin: 15px 0 27px 0;
+        
+    }
+
+    .bio {
+        max-width: 444px;
+        min-height: 160px;
+    }
+
+    .person {
+        margin-top: -14px;
+        min-width: 565px;
+        background: url('../assets/crew/image-douglas-hurley.webp') center bottom no-repeat;
+
+    }
+
+    & .selector {
+        list-style: none;
+        margin-top: 120px;
+
+        li {
+            display: inline-block;
+        }
+        
+        li:not(:last-child) {
+            margin-right: 24px;
+        }
+
+        a {
+            display: inline-block;
+            background: white;
+            width: 15px;
+            height: 15px;
+            border-radius: 50%;
+            opacity: 0.27;
+
+            &.selected,
+            &.selected:hover {
+                opacity: 1;
+            }
+
+            &:hover {
+                opacity: 0.5;
+            }
+        }
+
+    }
+
+}

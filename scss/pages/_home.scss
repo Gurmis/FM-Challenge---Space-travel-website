@@ -1,0 +1,44 @@
+main.home {
+    padding-top: 251px;
+    
+        .intro {
+            width: 450px;
+        }
+
+        .btn-main {
+            font-family: $font-family-bellefair;
+            font-size: 32px;
+            line-height: 36.67px;
+            letter-spacing: 2px;
+            color: $color-1;
+            cursor: pointer;
+
+            display: inline-block;
+            position: relative;
+            padding: 119px 62.32px 118.34px 62px;
+            margin-top: 110px;
+            margin-right: 140px;
+            align-self: center;
+            background: $color-3;
+            border-radius: 50%;
+            
+            &::before{
+                content: "";
+                display: inline-block;
+                background: transparentize($color-3, 0.9);
+                border-radius: 50%;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                z-index: -1;       
+                transition: .3s ease-in-out;    
+                
+            }
+            
+            &:hover::before {
+                transform: scale(1.64234);
+            }
+        }
+}

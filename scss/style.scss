@@ -1,36 +1,150 @@
+@import 'variables';
+@import 'header';
+@import './pages/home';
+@import './pages/destination';
+@import './pages/crew';
+@import './pages/technology';
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
 
-footer,
-header,
-main,
-nav,
-section {
-	display: block;
-}
-
 html {
 	font-family: sans-serif;
 	margin: 0;
 	padding: 0;
+	display: flex;
+	justify-content: center;
+	background: #0B0D19;
+	
 }
 
 body {
-	margin: 0;
+	margin: 0 auto;
 	padding: 0;
-	font-family: 'Source Sans Pro', 'Helvetica', sans-serif;
-	color: #323232;
-	
+	font-family: $font-family-bellefair;
+	color: $color-1;
+	min-height: 900px;
+	width: 100vw;
+	max-width: 1440px;
+	background: url('../assets/home/background-home-desktop.jpg') center top no-repeat;
+	background-size: cover;
+	background-attachment: fixed;
+	z-index: 0;
 }
 
 .container {
 	margin-right: auto;
 	margin-left: auto;
-	padding-left: 15px;
-	padding-right: 15px;
-	max-width: 1150px;
-	min-width: 320px;
+	padding-left: 55px;
+	padding-top: 40px;
+	width: 100%;
 }
+
+.right-side {
+	flex-shrink: 0;
+	min-height: 730px;
+}
+
+
+p {
+	font-size: 18px;
+	line-height: 32px;
+	font-family: $font-family-barlow;
+}
+
+h1 {
+	font-size: 150px;
+	font-family: $font-family-bellefair;
+	font-weight: normal;
+	margin: 0;
+}
+
+h2 {
+	font-size: 100px;
+}
+
+h3 {
+	font-size: 56px;
+}
+
+h4 {
+	font-size: 32px;
+}
+
+h5 {
+	font-size: 28px;
+	font-family: $font-family-barlow;
+	letter-spacing: 4.72px;
+	font-weight: normal;
+
+}
+
+.subheading1 {
+	font-size: 28px;
+}
+
+.subheading2 {
+	font-size: 14px;
+	letter-spacing: 2.35px;
+	font-family: $font-family-barlow;
+}
+
+nav {
+	font-size: 16px;
+	letter-spacing: 2.7px;
+	font-family: $font-family-barlow;
+}
+
+main {
+    color: $color-3;
+    padding-left: 110px;
+    display: flex;
+    justify-content: space-between;
+
+		h5 {
+			text-transform: uppercase;
+			color: $color-2;
+			line-height: 33.6px;
+		}
+
+		h1 {
+			line-height: 171.9px;
+			margin: 24px 0;
+			
+		}
+
+		p {
+			color: $color-2;
+			font-size: 18px;
+			font-weight: 300;
+			letter-spacing: 1.8px;
+		}
+        
+	}
+
+	
+	
+	.title {
+
+        span {
+            color: transparentize($color-3, 0.75);
+            font-weight: 700;
+            margin-right: 28px;
+        }
+
+        color: $color-3;
+        font-weight: 400;
+		text-transform: uppercase;
+        
+
+    }
+
+    .content {
+        display: flex;
+		width: 100%;
+        justify-content: space-between;
+        padding-top: 76px;
+    }
