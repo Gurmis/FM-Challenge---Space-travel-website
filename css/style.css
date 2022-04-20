@@ -155,7 +155,10 @@ main p {
   list-style: none;
   position: relative;
   background: rgba(255, 255, 255, 0.04);
+  -webkit-backdrop-filter: blur(2.1875rem);
   backdrop-filter: blur(2.1875rem);
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 .navigation li {
@@ -536,6 +539,7 @@ main.destination .right-side .specs .distance, main.destination .right-side .spe
   main.destination .right-side .description {
     font-size: .9375rem;
     line-height: 1.7;
+    min-height: 11.125rem;
   }
 }
 @media only screen and (max-width: 450px) {
@@ -646,7 +650,7 @@ main.crew .selector a:hover {
   }
   main.crew .left-side .bio {
     font-size: .9375rem;
-    min-height: 9rem;
+    min-height: 12.5rem;
   }
   main.crew .left-side .selector {
     margin: 2rem 0;
@@ -783,6 +787,7 @@ main.technology .vehicle {
   }
   main.technology .description {
     font-size: .9375rem;
+    min-height: 14.375rem;
   }
   main.technology .vehicle {
     margin: 2.0625rem -3rem 0;
