@@ -7,7 +7,7 @@ main.crew {
         text-transform: uppercase;
         font-weight: 400;
         
-        margin-top: 154px;
+        margin-top: 9.625rem;
     }
 
     .name {
@@ -15,41 +15,41 @@ main.crew {
         font-weight: 400;
         text-transform: uppercase;
 
-        margin: 15px 0 27px 0;
+        margin: .9375rem 0 1.6875rem 0;
         
     }
 
     .bio {
-        max-width: 444px;
-        min-height: 160px;
-        margin-right: 10px;
+        max-width: 27.75rem;
+        min-height: 10rem;
+        margin-right: .625rem;
     }
 
     .person {
-        margin-top: -14px;
-        min-width: 565px;
+        margin-top: -0.875rem;
+        min-width: 35.3125rem;
         background: url('../assets/crew/image-douglas-hurley.webp') center bottom no-repeat;
 
     }
 
     & .selector {
         list-style: none;
-        margin-top: 120px;
-        margin-bottom: 94px;
+        margin-top: 7.5rem;
+        margin-bottom: 5.875rem;
 
         li {
             display: inline-block;
         }
         
         li:not(:last-child) {
-            margin-right: 24px;
+            margin-right: 1.5rem;
         }
 
         a {
             display: inline-block;
             background: white;
-            width: 15px;
-            height: 15px;
+            width: .9375rem;
+            height: .9375rem;
             border-radius: 50%;
             opacity: 0.27;
 
@@ -79,41 +79,41 @@ main.crew {
         .left-side {
 
             .role {
-                font-size: 24px;
-                margin-top: 60px;
+                font-size: 1.5rem;
+                margin-top: 3.75rem;
             }
 
             .name {
-                font-size: 40px;
+                font-size: 2.5rem;
             }
 
             .bio {
-                font-size: 16px;
+                font-size: 1rem;
                 text-align: center;
-                max-width: 458px;
-                min-height: 96px;
-                line-height: 24px;
-                letter-spacing: 1.6px;
+                max-width: 28.625rem;
+                min-height: 6rem;
+                line-height: 1.5rem;
+                letter-spacing: .1rem;
                 // min-height: auto;
             }
 
             .selector {
-                margin: 40px 0;
+                margin: 2.5rem 0;
 
                 a {
-                    width: 10px;
-                    height: 10px;
+                    width: .625rem;
+                    height: .625rem;
                 }
             }
         }
 
         .right-side {
             min-width: auto;
-            width: 456px;
-            min-height: 572px;
+            width: 28.5rem;
+            min-height: 35.75rem;
             background-size: contain;
             margin: 0 auto;
-            border-bottom: 1px solid $color-4;
+            border-bottom: .0625rem solid $color-4;
         }
     }
 }
@@ -124,30 +124,30 @@ main.crew {
         .left-side {
 
             .role {
-                font-size: 16px;
+                font-size: 1rem;
                 text-align: center;
                 margin-top: 0;
             }
             
             .name {
-                font-size: 24px;
+                font-size: 1.5rem;
                 text-align: center;
             }
             
             .bio {
-                font-size: 15px;
-                min-height: 144px;
+                font-size: .9375rem;
+                min-height: 9rem;
             }
 
             .selector {
-                margin: 32px 0;
+                margin: 2rem 0;
             }
         }
 
         .right-side {
             width: 100%;
-            min-height: 222px;
-            margin-top: 32px;
+            min-height: 13.875rem;
+            margin-top: 2rem;
         }
     }
 }

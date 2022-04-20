@@ -3,26 +3,26 @@
 }
 
 main.home {
-    padding-top: 251px;
+    padding-top: 15.6875rem;
     justify-content: space-between;
     
         .intro {
-            width: 450px;
+            width: 28.125rem;
         }
 
         .btn-main {
             font-family: $font-family-bellefair;
-            font-size: 32px;
-            line-height: 36.67px;
-            letter-spacing: 2px;
+            font-size: 2rem;
+            line-height: 2.2919rem;
+            letter-spacing: .125rem;
             color: $color-1;
             cursor: pointer;
 
             display: inline-block;
             position: relative;
-            padding: 119px 62.32px 118.34px 62px;
-            margin-top: 110px;
-            margin-right: 140px;
+            padding: 7.4375rem 3.895rem 7.3963rem 3.875rem;
+            margin-top: 6.875rem;
+            margin-right: 8.75rem;
             align-self: center;
             background: $color-3;
             border-radius: 50%;
@@ -50,24 +50,24 @@ main.home {
 @media only screen and($breakpoint-1050) {
     main.home {
         flex-direction: column;
-        max-width: 450px;
+        max-width: 28.125rem;
         padding-left: 0;
         padding-right: 0;
         margin: 0 auto;
         text-align: center;
-        padding-top: 106px;
+        padding-top: 6.625rem;
 
         h5 {
-            font-size: 20px;
+            font-size: 1.25rem;
         }
         
         p {
-            font-size: 16px;
+            font-size: 1rem;
         }
     
         .btn-main {
-            padding: 102.7px 46.16px 102.64px 46.17px;
-            margin: 156px 0 90px 0;
+            padding: 6.4188rem 2.885rem 6.415rem 2.8856rem;
+            margin: 9.75rem 0 5.625rem 0;
         }
     }
 }
@@ -76,27 +76,27 @@ main.home {
     main.home {
         .intro {
             width: 100%;
-            padding: 24px;
+            padding: 1.5rem;
         }
 
         h5 {
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         h1 {
-            font-size: 80px;
-            margin: 16px 0;
-            line-height: 100px;
+            font-size: 5rem;
+            margin: 1rem 0;
+            line-height: 6.25rem;
         }
         p {
-            font-size: 15px;
+            font-size: .9375rem;
         }
     
         .btn-main {
-            padding: 56.68px 25.6px 56.68px 25.6px;
-            margin: 81px 0 48px 0;
+            padding: 3.5425rem 1.6rem 3.5425rem 1.6rem;
+            margin: 5.0625rem 0 3rem 0;
 
-            font-size: 20px;
+            font-size: 1.25rem;
             
         }
     }

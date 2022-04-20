@@ -6,7 +6,7 @@ main.technology {
 
     .sub-left-side {
         display: flex;
-        margin-top: 137px;
+        margin-top: 8.5625rem;
     }
 
     .sub-title {
@@ -18,16 +18,16 @@ main.technology {
         font-weight: 400;
         text-transform: uppercase;
 
-        margin: 15px 0 27px 0;
+        margin: .9375rem 0 1.6875rem 0;
     }
 
     .details {
-        margin-left: 80px;
+        margin-left: 5rem;
     }
     
     .description {
-        max-width: 470px;
-        margin-right: 10px;
+        max-width: 29.375rem;
+        margin-right: .625rem;
     }
 
     .sub-navigation {
@@ -35,14 +35,14 @@ main.technology {
         
         display: flex;
         flex-direction: column;
-        gap: 32px;
+        gap: 2rem;
         padding: 0;
         margin: 0;
         
         li {
             display: inline-block;
-            width: 80px;
-            height: 80px;        
+            width: 5rem;
+            height: 5rem;        
         }
 
         a {
@@ -53,11 +53,11 @@ main.technology {
             width: 100%;
             height: 100%;
             
-            font-size: 32px;
+            font-size: 2rem;
             color: $color-3;
             line-height: 1.4;
             border-radius: 50%;
-            border: 1px solid transparentize($color-3, 0.75);
+            border: .0625rem solid transparentize($color-3, 0.75);
 
             &.selected,
             &.selected:hover {
@@ -74,9 +74,9 @@ main.technology {
     }
 
     .vehicle {
-        width: 515px;
-        height: 507px;
-        margin-top: 60px;
+        width: 32.1875rem;
+        height: 31.6875rem;
+        margin-top: 3.75rem;
         background: url('../assets/technology/image-launch-vehicle-portrait.jpg') center top no-repeat;
     }
 }
@@ -85,7 +85,7 @@ main.technology {
     main.technology {
         
         .left-side {
-            // padding: 0 39px;
+            // padding: 0 2.4375rem;
         }
 
         .sub-left-side {
@@ -95,15 +95,15 @@ main.technology {
         }
         .sub-navigation {
             flex-direction: row;
-            margin: 56px 0 44px;
+            margin: 3.5rem 0 2.75rem;
 
             li {
-                width: 60px;
-                height: 60px;
+                width: 3.75rem;
+                height: 3.75rem;
             }
 
             a {
-                font-size: 24px;
+                font-size: 1.5rem;
             }
         }
 
@@ -113,26 +113,26 @@ main.technology {
         }
 
         .sub-title {
-            font-size: 16px;
+            font-size: 1rem;
         }
         
         .name {
-            font-size: 40px;
-            margin-bottom: 16px;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
         }
         
         .description {
-            font-size: 16px;
+            font-size: 1rem;
         }
 
         .vehicle {
             background-image: url('../assets/technology/image-launch-vehicle-landscape.jpg');
             background-size: 100% auto;
             background-position-y: bottom;
-            width: calc(100% + 78px);
+            width: calc(100% + 4.875rem);
             height: calc(100vw/2.4);
-            // max-width: 768px;
-            margin: 60px -78px 0;
+            // max-width: 48rem;
+            margin: 3.75rem -4.875rem 0;
             max-width: none;
         }
     }
@@ -142,35 +142,35 @@ main.technology {
     main.technology {
 
         .sub-navigation {
-            margin: 34px 0 26px;
+            margin: 2.125rem 0 1.625rem;
            
 
             li {
-                width: 40px;
-                height: 40px;
+                width: 2.5rem;
+                height: 2.5rem;
             }
 
             a {
-               font-size: 16px;
+               font-size: 1rem;
             }
         }
 
         .sub-title {
-            font-size: 14px;
+            font-size: .875rem;
         }
         
         .name {
-            font-size: 24px;
-            margin-top: 9px;
+            font-size: 1.5rem;
+            margin-top: .5625rem;
         }
         
         .description {
-            font-size: 15px;
+            font-size: .9375rem;
         }
 
         .vehicle {
-            margin: 33px -48px 0;
-            width: calc(100% + 48px);
+            margin: 2.0625rem -3rem 0;
+            width: calc(100% + 3rem);
         }
     }
 }

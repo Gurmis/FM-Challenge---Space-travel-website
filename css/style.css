@@ -11,7 +11,7 @@ html {
   padding: 0;
   display: flex;
   justify-content: center;
-  background: #0B0D19 url("../assets/home/background-home-desktop.jpg") center 0px no-repeat;
+  background: #0B0D19 url("../assets/home/background-home-desktop.jpg") center 0rem no-repeat;
   background-size: cover;
   background-attachment: fixed;
 }
@@ -23,7 +23,7 @@ body {
   color: #0B0D17;
   height: 100%;
   width: 100vw;
-  max-width: 1440px;
+  max-width: 90rem;
   z-index: 0;
 }
 
@@ -34,8 +34,8 @@ body {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 55px;
-  padding-top: 40px;
+  padding-left: 3.4375rem;
+  padding-top: 2.5rem;
   width: 100%;
   height: 100%;
   display: flex;
@@ -43,74 +43,74 @@ body {
 }
 
 p {
-  font-size: 18px;
-  line-height: 32px;
+  font-size: 1.125rem;
+  line-height: 2rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 h1 {
-  font-size: 150px;
+  font-size: 9.375rem;
   font-family: "Bellefair", serif;
   font-weight: normal;
   margin: 0;
 }
 
 h2 {
-  font-size: 100px;
+  font-size: 6.25rem;
 }
 
 h3 {
-  font-size: 56px;
+  font-size: 3.5rem;
 }
 
 h4 {
-  font-size: 32px;
+  font-size: 2rem;
 }
 
 h5 {
-  font-size: 28px;
+  font-size: 1.75rem;
   font-family: "Barlow Condensed", sans-serif;
-  letter-spacing: 4.72px;
+  letter-spacing: .295rem;
   font-weight: normal;
 }
 
 .subheading1 {
-  font-size: 28px;
+  font-size: 1.75rem;
 }
 
 .subheading2 {
-  font-size: 14px;
-  letter-spacing: 2.35px;
+  font-size: .875rem;
+  letter-spacing: .1469rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 nav {
-  font-size: 16px;
-  letter-spacing: 2.7px;
+  font-size: 1rem;
+  letter-spacing: .1688rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 
 main {
   color: #FFFFFF;
   height: 100%;
-  padding-left: 110px;
-  margin-bottom: 98px;
+  padding-left: 6.875rem;
+  margin-bottom: 6.125rem;
   display: flex;
 }
 main h5 {
   text-transform: uppercase;
   color: #D0D6F9;
-  line-height: 33.6px;
+  line-height: 2.1rem;
 }
 main h1 {
-  line-height: 171.9px;
-  margin: 24px 0;
+  line-height: 10.7438rem;
+  margin: 1.5rem 0;
 }
 main p {
   color: #D0D6F9;
-  font-size: 18px;
+  font-size: 1.125rem;
   font-weight: 300;
-  letter-spacing: 1.8px;
+  letter-spacing: .1125rem;
 }
 
 .title {
@@ -121,14 +121,14 @@ main p {
 .title span {
   color: rgba(255, 255, 255, 0.25);
   font-weight: 700;
-  margin-right: 28px;
+  margin-right: 1.75rem;
 }
 
 .content {
   display: flex;
   width: 100%;
   justify-content: space-between;
-  padding-top: 76px;
+  padding-top: 4.75rem;
 }
 
 .site-header {
@@ -141,43 +141,43 @@ main p {
   justify-content: space-between;
   align-items: center;
   position: relative;
-  padding-left: 39px;
+  padding-left: 2.4375rem;
 }
 .site-header nav .line {
   position: absolute;
-  left: 114px;
+  left: 7.125rem;
   z-index: 1;
   fill: rgba(255, 255, 255, 0.25);
 }
 
 .navigation {
-  padding: 0 165px 0 115px;
+  padding: 0 10.3125rem 0 7.1875rem;
   list-style: none;
   position: relative;
   background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(35px);
+  backdrop-filter: blur(2.1875rem);
   display: flex;
 }
 .navigation li {
   display: inline-block;
-  margin-right: 42px;
+  margin-right: 2.625rem;
 }
 .navigation a {
   text-decoration: none;
   display: inline-block;
-  padding: 37.3px 2px 37.3px 0;
+  padding: 2.3312rem .125rem 2.3312rem 0;
   color: #FFFFFF;
   text-transform: uppercase;
 }
 .navigation a span {
   font-weight: 700;
-  margin-right: 11px;
+  margin-right: .6875rem;
 }
 .navigation a:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+  border-bottom: 0.1875rem solid rgba(255, 255, 255, 0.5);
 }
 .navigation a.selected {
-  border-bottom: 3px solid #FFFFFF;
+  border-bottom: 0.1875rem solid #FFFFFF;
 }
 .navigation li:last-of-type {
   margin-right: 0;
@@ -187,11 +187,11 @@ main p {
   /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
   display: none;
   z-index: 13;
-  height: 40px;
-  width: 40px;
+  height: 2.5rem;
+  width: 2.5rem;
   position: absolute;
-  top: 24px;
-  right: 16px;
+  top: 1.5rem;
+  right: 1rem;
   cursor: pointer;
   opacity: 0;
 }
@@ -200,10 +200,10 @@ main p {
   display: none;
   position: absolute;
   z-index: 12;
-  top: 32px;
-  right: 24px;
-  height: 24px;
-  width: 24px;
+  top: 2rem;
+  right: 1.5rem;
+  height: 1.5rem;
+  width: 1.5rem;
   /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
   align-items: center;
   justify-content: center;
@@ -215,7 +215,7 @@ main p {
   top: 0;
   left: 0;
   background: #D0D6F9;
-  height: 3px;
+  height: .1875rem;
   width: 100%;
   transition: all  0.4s ease;
 }
@@ -226,7 +226,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 .hamburger > div::after {
   content: '';
   position: absolute;
-  top: -7px;
+  top: -0.4375rem;
   background: #D0D6F9;
   width: 100%;
   height: 100%;
@@ -234,7 +234,7 @@ TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
 }
 
 .hamburger > div::after {
-  top: 7px;
+  top: .4375rem;
 }
 
 /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
@@ -281,13 +281,13 @@ input.toggler:checked ~ .navigation.top {
   }
 
   .navigation.top {
-    padding: 0 46px 0 48px;
+    padding: 0 2.875rem 0 3rem;
   }
   .navigation.top li {
-    margin-right: 32px;
+    margin-right: 2rem;
   }
   .navigation.top a {
-    font-size: 14px;
+    font-size: .875rem;
   }
   .navigation.top a span {
     display: none;
@@ -302,38 +302,38 @@ input.toggler:checked ~ .navigation.top {
     height: 100vh;
     width: 62%;
     flex-direction: column;
-    font-size: 16px;
-    padding: 188px 0 0;
+    font-size: 1rem;
+    padding: 11.75rem 0 0;
     transition: transform .4s ease;
   }
   .navigation.top li {
     margin: 0;
-    border: 3px solid transparent;
-    padding-left: 32px;
+    border: .1875rem solid transparent;
+    padding-left: 2rem;
     cursor: pointer;
   }
   .navigation.top li:hover {
     background: rgba(255, 255, 255, 0.11);
   }
   .navigation.top a {
-    padding: 20px 0 12px;
-    border-bottom: 3px solid transparent;
+    padding: 1.25rem 0 .75rem;
+    border-bottom: .1875rem solid transparent;
   }
   .navigation.top a span {
     display: inline-block;
   }
   .navigation.top a.selected {
-    border-bottom: 3px solid white;
+    border-bottom: .1875rem solid white;
   }
   .navigation.top a:hover {
-    border-bottom: 3px solid transparent;
+    border-bottom: .1875rem solid transparent;
   }
   .navigation.top a.selected:hover {
-    border-bottom: 3px solid white;
+    border-bottom: .1875rem solid white;
   }
 
   .symbol {
-    margin-top: 21px;
+    margin-top: 1.3125rem;
   }
 
   .toggler {
@@ -353,24 +353,24 @@ input.toggler:checked ~ .navigation.top {
 }
 
 main.home {
-  padding-top: 251px;
+  padding-top: 15.6875rem;
   justify-content: space-between;
 }
 main.home .intro {
-  width: 450px;
+  width: 28.125rem;
 }
 main.home .btn-main {
   font-family: "Bellefair", serif;
-  font-size: 32px;
-  line-height: 36.67px;
-  letter-spacing: 2px;
+  font-size: 2rem;
+  line-height: 2.2919rem;
+  letter-spacing: .125rem;
   color: #0B0D17;
   cursor: pointer;
   display: inline-block;
   position: relative;
-  padding: 119px 62.32px 118.34px 62px;
-  margin-top: 110px;
-  margin-right: 140px;
+  padding: 7.4375rem 3.895rem 7.3963rem 3.875rem;
+  margin-top: 6.875rem;
+  margin-right: 8.75rem;
   align-self: center;
   background: #FFFFFF;
   border-radius: 50%;
@@ -395,68 +395,68 @@ main.home .btn-main:hover::before {
 @media only screen and (max-width: 1050px) {
   main.home {
     flex-direction: column;
-    max-width: 450px;
+    max-width: 28.125rem;
     padding-left: 0;
     padding-right: 0;
     margin: 0 auto;
     text-align: center;
-    padding-top: 106px;
+    padding-top: 6.625rem;
   }
   main.home h5 {
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   main.home p {
-    font-size: 16px;
+    font-size: 1rem;
   }
   main.home .btn-main {
-    padding: 102.7px 46.16px 102.64px 46.17px;
-    margin: 156px 0 90px 0;
+    padding: 6.4188rem 2.885rem 6.415rem 2.8856rem;
+    margin: 9.75rem 0 5.625rem 0;
   }
 }
 @media only screen and (max-width: 600px) {
   main.home .intro {
     width: 100%;
-    padding: 24px;
+    padding: 1.5rem;
   }
   main.home h5 {
-    font-size: 16px;
+    font-size: 1rem;
   }
   main.home h1 {
-    font-size: 80px;
-    margin: 16px 0;
-    line-height: 100px;
+    font-size: 5rem;
+    margin: 1rem 0;
+    line-height: 6.25rem;
   }
   main.home p {
-    font-size: 15px;
+    font-size: .9375rem;
   }
   main.home .btn-main {
-    padding: 56.68px 25.6px 56.68px 25.6px;
-    margin: 81px 0 48px 0;
-    font-size: 20px;
+    padding: 3.5425rem 1.6rem 3.5425rem 1.6rem;
+    margin: 5.0625rem 0 3rem 0;
+    font-size: 1.25rem;
   }
 }
 main.destination {
   display: block;
 }
 main.destination .content {
-  gap: 10px;
+  gap: .625rem;
 }
 main.destination .planet {
-  width: 445px;
-  height: 445px;
-  margin-top: 97px;
-  margin-left: 65px;
-  margin-right: 10px;
+  width: 27.8125rem;
+  height: 27.8125rem;
+  margin-top: 6.0625rem;
+  margin-left: 4.0625rem;
+  margin-right: .625rem;
   flex-shrink: 0;
   background: url("../assets/destination/image-moon.png");
   background-size: 100% auto;
 }
 main.destination .right-side {
-  max-width: 445px;
-  margin: 98px auto 0;
+  max-width: 27.8125rem;
+  margin: 6.125rem auto 0;
 }
 main.destination .right-side p {
-  margin-right: 10px;
+  margin-right: .625rem;
 }
 main.destination .right-side .navigation {
   background: none;
@@ -464,19 +464,19 @@ main.destination .right-side .navigation {
   padding: 0;
 }
 main.destination .right-side .navigation a {
-  padding: 0 0 15px 0;
-  font-size: 16px;
-  letter-spacing: 1.9px;
+  padding: 0 0 .9375rem 0;
+  font-size: 1rem;
+  letter-spacing: .1187rem;
   font-family: "Barlow Condensed", sans-serif;
 }
 main.destination .right-side .title {
-  margin: 37px 0 14px 0;
-  line-height: 114.6px;
+  margin: 2.3125rem 0 .875rem 0;
+  line-height: 7.1625rem;
 }
 main.destination .right-side .description {
-  margin-bottom: 28px;
-  padding-bottom: 54px;
-  border-bottom: 1px solid #383B4B;
+  margin-bottom: 1.75rem;
+  padding-bottom: 3.375rem;
+  border-bottom: 0.0625rem solid #383B4B;
 }
 main.destination .right-side .specs {
   display: flex;
@@ -486,11 +486,11 @@ main.destination .right-side .specs .col {
   flex-direction: column;
 }
 main.destination .right-side .specs .left {
-  margin-right: 79px;
+  margin-right: 4.9375rem;
 }
 main.destination .right-side .specs .distance, main.destination .right-side .specs .travel {
   font-family: "Bellefair", serif;
-  letter-spacing: 0.1px;
+  letter-spacing: .0063rem;
   color: #FFFFFF;
 }
 
@@ -498,20 +498,20 @@ main.destination .right-side .specs .distance, main.destination .right-side .spe
   main.destination .content {
     gap: 0;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 2.5rem;
   }
   main.destination .left-side .planet {
-    width: 300px;
-    height: 300px;
-    margin-top: 60px;
+    width: 18.75rem;
+    height: 18.75rem;
+    margin-top: 3.75rem;
     margin-left: 0;
     margin-right: 0;
   }
   main.destination .right-side .description {
     margin-right: 0;
-    padding-bottom: 49px;
+    padding-bottom: 3.0625rem;
     text-align: center;
-    letter-spacing: 1px;
+    letter-spacing: .0625rem;
   }
   main.destination .right-side .specs {
     width: 100%;
@@ -529,19 +529,19 @@ main.destination .right-side .specs .distance, main.destination .right-side .spe
 }
 @media only screen and (max-width: 600px) {
   main.destination .left-side .planet {
-    width: 170px;
-    height: 170px;
-    margin-top: 32px;
+    width: 10.625rem;
+    height: 10.625rem;
+    margin-top: 2rem;
   }
   main.destination .right-side .description {
-    font-size: 15px;
+    font-size: .9375rem;
     line-height: 1.7;
   }
 }
 @media only screen and (max-width: 450px) {
   main.destination .right-side .specs {
     flex-direction: column;
-    gap: 20px;
+    gap: 1.25rem;
   }
 }
 main.crew {
@@ -551,40 +551,40 @@ main.crew .role {
   opacity: 0.5;
   text-transform: uppercase;
   font-weight: 400;
-  margin-top: 154px;
+  margin-top: 9.625rem;
 }
 main.crew .name {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 15px 0 27px 0;
+  margin: .9375rem 0 1.6875rem 0;
 }
 main.crew .bio {
-  max-width: 444px;
-  min-height: 160px;
-  margin-right: 10px;
+  max-width: 27.75rem;
+  min-height: 10rem;
+  margin-right: .625rem;
 }
 main.crew .person {
-  margin-top: -14px;
-  min-width: 565px;
+  margin-top: -0.875rem;
+  min-width: 35.3125rem;
   background: url("../assets/crew/image-douglas-hurley.webp") center bottom no-repeat;
 }
 main.crew .selector {
   list-style: none;
-  margin-top: 120px;
-  margin-bottom: 94px;
+  margin-top: 7.5rem;
+  margin-bottom: 5.875rem;
 }
 main.crew .selector li {
   display: inline-block;
 }
 main.crew .selector li:not(:last-child) {
-  margin-right: 24px;
+  margin-right: 1.5rem;
 }
 main.crew .selector a {
   display: inline-block;
   background: white;
-  width: 15px;
-  height: 15px;
+  width: .9375rem;
+  height: .9375rem;
   border-radius: 50%;
   opacity: 0.27;
 }
@@ -604,57 +604,57 @@ main.crew .selector a:hover {
     justify-content: space-between;
   }
   main.crew .left-side .role {
-    font-size: 24px;
-    margin-top: 60px;
+    font-size: 1.5rem;
+    margin-top: 3.75rem;
   }
   main.crew .left-side .name {
-    font-size: 40px;
+    font-size: 2.5rem;
   }
   main.crew .left-side .bio {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
-    max-width: 458px;
-    min-height: 96px;
-    line-height: 24px;
-    letter-spacing: 1.6px;
+    max-width: 28.625rem;
+    min-height: 6rem;
+    line-height: 1.5rem;
+    letter-spacing: .1rem;
   }
   main.crew .left-side .selector {
-    margin: 40px 0;
+    margin: 2.5rem 0;
   }
   main.crew .left-side .selector a {
-    width: 10px;
-    height: 10px;
+    width: .625rem;
+    height: .625rem;
   }
   main.crew .right-side {
     min-width: auto;
-    width: 456px;
-    min-height: 572px;
+    width: 28.5rem;
+    min-height: 35.75rem;
     background-size: contain;
     margin: 0 auto;
-    border-bottom: 1px solid #383B4B;
+    border-bottom: 0.0625rem solid #383B4B;
   }
 }
 @media only screen and (max-width: 600px) {
   main.crew .left-side .role {
-    font-size: 16px;
+    font-size: 1rem;
     text-align: center;
     margin-top: 0;
   }
   main.crew .left-side .name {
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
   }
   main.crew .left-side .bio {
-    font-size: 15px;
-    min-height: 144px;
+    font-size: .9375rem;
+    min-height: 9rem;
   }
   main.crew .left-side .selector {
-    margin: 32px 0;
+    margin: 2rem 0;
   }
   main.crew .right-side {
     width: 100%;
-    min-height: 222px;
-    margin-top: 32px;
+    min-height: 13.875rem;
+    margin-top: 2rem;
   }
 }
 main.technology .left-side {
@@ -662,7 +662,7 @@ main.technology .left-side {
 }
 main.technology .sub-left-side {
   display: flex;
-  margin-top: 137px;
+  margin-top: 8.5625rem;
 }
 main.technology .sub-title {
   text-transform: uppercase;
@@ -671,27 +671,27 @@ main.technology .name {
   font-style: normal;
   font-weight: 400;
   text-transform: uppercase;
-  margin: 15px 0 27px 0;
+  margin: .9375rem 0 1.6875rem 0;
 }
 main.technology .details {
-  margin-left: 80px;
+  margin-left: 5rem;
 }
 main.technology .description {
-  max-width: 470px;
-  margin-right: 10px;
+  max-width: 29.375rem;
+  margin-right: .625rem;
 }
 main.technology .sub-navigation {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 32px;
+  gap: 2rem;
   padding: 0;
   margin: 0;
 }
 main.technology .sub-navigation li {
   display: inline-block;
-  width: 80px;
-  height: 80px;
+  width: 5rem;
+  height: 5rem;
 }
 main.technology .sub-navigation a {
   text-decoration: none;
@@ -700,11 +700,11 @@ main.technology .sub-navigation a {
   align-items: center;
   width: 100%;
   height: 100%;
-  font-size: 32px;
+  font-size: 2rem;
   color: #FFFFFF;
   line-height: 1.4;
   border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.25);
+  border: 0.0625rem solid rgba(255, 255, 255, 0.25);
 }
 main.technology .sub-navigation a.selected, main.technology .sub-navigation a.selected:hover {
   background: #FFFFFF;
@@ -716,9 +716,9 @@ main.technology .sub-navigation a:hover {
   border-color: #FFFFFF;
 }
 main.technology .vehicle {
-  width: 515px;
-  height: 507px;
-  margin-top: 60px;
+  width: 32.1875rem;
+  height: 31.6875rem;
+  margin-top: 3.75rem;
   background: url("../assets/technology/image-launch-vehicle-portrait.jpg") center top no-repeat;
 }
 
@@ -730,63 +730,63 @@ main.technology .vehicle {
   }
   main.technology .sub-navigation {
     flex-direction: row;
-    margin: 56px 0 44px;
+    margin: 3.5rem 0 2.75rem;
   }
   main.technology .sub-navigation li {
-    width: 60px;
-    height: 60px;
+    width: 3.75rem;
+    height: 3.75rem;
   }
   main.technology .sub-navigation a {
-    font-size: 24px;
+    font-size: 1.5rem;
   }
   main.technology .details {
     margin-left: 0;
     text-align: center;
   }
   main.technology .sub-title {
-    font-size: 16px;
+    font-size: 1rem;
   }
   main.technology .name {
-    font-size: 40px;
-    margin-bottom: 16px;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
   }
   main.technology .description {
-    font-size: 16px;
+    font-size: 1rem;
   }
   main.technology .vehicle {
     background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
     background-size: 100% auto;
     background-position-y: bottom;
-    width: calc(100% + 78px);
+    width: calc(100% + 4.875rem);
     height: calc(100vw/2.4);
-    margin: 60px -78px 0;
+    margin: 3.75rem -4.875rem 0;
     max-width: none;
   }
 }
 @media only screen and (max-width: 600px) {
   main.technology .sub-navigation {
-    margin: 34px 0 26px;
+    margin: 2.125rem 0 1.625rem;
   }
   main.technology .sub-navigation li {
-    width: 40px;
-    height: 40px;
+    width: 2.5rem;
+    height: 2.5rem;
   }
   main.technology .sub-navigation a {
-    font-size: 16px;
+    font-size: 1rem;
   }
   main.technology .sub-title {
-    font-size: 14px;
+    font-size: .875rem;
   }
   main.technology .name {
-    font-size: 24px;
-    margin-top: 9px;
+    font-size: 1.5rem;
+    margin-top: .5625rem;
   }
   main.technology .description {
-    font-size: 15px;
+    font-size: .9375rem;
   }
   main.technology .vehicle {
-    margin: 33px -48px 0;
-    width: calc(100% + 48px);
+    margin: 2.0625rem -3rem 0;
+    width: calc(100% + 3rem);
   }
 }
 @media only screen and (max-width: 1050px) {
@@ -795,13 +795,13 @@ main.technology .vehicle {
   }
 
   main {
-    padding-left: 39px;
-    padding-right: 39px;
+    padding-left: 2.4375rem;
+    padding-right: 2.4375rem;
   }
   main .content {
     gap: 0;
     flex-direction: column;
-    padding-top: 40px;
+    padding-top: 2.5rem;
   }
   main .left-side {
     display: flex;
@@ -810,19 +810,19 @@ main.technology .vehicle {
   }
   main .left-side .title {
     margin-right: auto;
-    font-size: 20px;
+    font-size: 1.25rem;
   }
   main .right-side {
     display: flex;
-    max-width: 573px;
-    margin: 53px auto 0;
+    max-width: 35.8125rem;
+    margin: 3.3125rem auto 0;
     flex-direction: column;
     align-items: center;
   }
   main .right-side .title {
-    font-size: 80px;
-    margin-top: 32px;
-    margin-bottom: 8px;
+    font-size: 5rem;
+    margin-top: 2rem;
+    margin-bottom: .5rem;
   }
 }
 @media only screen and (max-width: 768px) {
@@ -832,21 +832,21 @@ main.technology .vehicle {
 }
 @media only screen and (max-width: 600px) {
   main {
-    padding: 0 24px;
+    padding: 0 1.5rem;
   }
   main .content {
-    padding-top: 34px;
+    padding-top: 2.125rem;
   }
   main .left-side .title {
-    font-size: 16px;
+    font-size: 1rem;
     margin-right: 0;
   }
   main .right-side {
-    margin-top: 26px;
+    margin-top: 1.625rem;
   }
   main .right-side .title {
-    font-size: 56px;
-    margin-top: 20px;
+    font-size: 3.5rem;
+    margin-top: 1.25rem;
   }
 }
 
