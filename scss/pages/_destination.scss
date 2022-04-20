@@ -1,6 +1,10 @@
 main.destination {
     display: block;
 
+    .content {
+        gap: 10px;
+    }
+
 
     
     .planet {
@@ -8,17 +12,23 @@ main.destination {
         height: 445px;
         margin-top: 97px;
         margin-left: 65px;
-
+        margin-right: 10px;
         flex-shrink: 0;
-
+        
         background: url('../assets/destination/image-moon.png');
+        background-size: 100% auto;
         
     }
 
     .right-side {
-        width: 445px;
-        margin-right: 163px;
-        margin-top: 98px;
+        max-width: 445px;
+        // margin-right: 163px;
+        // margin-top: 98px;
+        margin: 98px auto 0;
+
+        p {
+            margin-right: 10px;
+        }
 
         .navigation {
             background: none;
@@ -27,24 +37,26 @@ main.destination {
     
             a {
                 padding: 0 0 15px 0;
-                margin-right: 35px;
+                // margin-right: 35px;
                 font-size: 16px;
                 letter-spacing: 1.9px;
                 font-family: $font-family-barlow;
             }
-
         }
         
         .title {
             margin: 37px 0 14px 0;
             line-height: 114.6px;
         }
+        
+        .description {
+            margin-bottom: 28px;
+            padding-bottom: 54px;
+            border-bottom: 1px solid $color-4;
+        }
 
         .specs {
             display: flex;
-            padding-top: 28px;
-            margin-top: 54px;
-            border-top: 1px solid $color-4;
             
             .col {
                 display: flex;
@@ -58,16 +70,96 @@ main.destination {
             .distance, .travel {
                 font-family: $font-family-bellefair;
                 letter-spacing: 0.1px;
-                
+                color: $color-3;
+            }
+        }
+    }
+}
+
+@media only screen and($breakpoint-1050) {
+    main.destination {
+            
+        .content {
+            gap: 0;
+            flex-direction: column;
+            padding-top: 40px;
+        }
+
+        .left-side {
+            
+
+            .planet {
+                width: 300px;
+                height: 300px;
+                // background-size: contain;
+    
+                margin-top: 60px;
+                margin-left: 0;
+                margin-right: 0;
             }
         }
 
-        
-        
+        .right-side {
+           
+
+            .description {
+                margin-right: 0;
+                padding-bottom: 49px;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            .specs {
+                width: 100%;
+                justify-content: space-evenly;
+
+                .left {
+                    margin-right: 0;
+                }
+            }
+
+            .subheading2 {
+                margin-right: 0;
+            }
+            
+            .col {
+                align-items: center;
+            }
+        }
     }
-    
+}
 
+@media only screen and($breakpoint-600) {
+    main.destination {
+        
+        .left-side {
+            
+            .planet {
+                width: 170px;
+                height: 170px;
+                margin-top: 32px;
+            }
+        }
 
-    
+        .right-side {
+            
+            .description {
+                font-size: 15px;
+                line-height: 1.7;
+            }
+        }
+    }
+}
 
+@media only screen and($breakpoint-450) {
+    main.destination {
+        
+        .right-side {
+
+            .specs {
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
 }

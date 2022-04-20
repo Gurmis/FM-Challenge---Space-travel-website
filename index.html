@@ -15,7 +15,7 @@
 	<link rel="stylesheet" href="assets/jquery-ui.theme.min.css">
 </head>
 <body>
-	<div class="container">
+	<div class="container home">
 		<header class="site-header">
 			<nav>
 				<span class="symbol">
@@ -27,12 +27,18 @@
 				<svg class="line" width="473" height="1" viewBox="0 0 473 1" fill="none" xmlns="http://www.w3.org/2000/svg">
 					<rect width="473" height="1"/>
 				</svg>
-				<ul class="navigation">
+				<input type="checkbox" class="toggler">
+				  <div class="hamburger">
+					  <div></div>
+				</div>
+				<ul class="navigation top">
 					<li><a href="index.html" class="home selected"><span>00</span>Home</a></li>
 					<li><a href="destination.html" class="destination"><span>01</span>Destination</a></li>
 					<li><a href="crew.html" class="crew"><span>02</span>Crew</a></li>
 					<li><a href="technology.html" class="technology"><span>03</span>Technology</a></li>
 				</ul>
+				<div class="overlay"></div>
+				
 			</nav>
 			
 			
@@ -52,7 +58,11 @@
 		</main>
 		
 	</div>
-	<aside class="pre-footer">
+	<aside class="imagePreloading">
+		<div id="preloader1"></div>
+		<div id="preloader2"></div>
+		<div id="preloader3"></div>
+		<div id="preloader4"></div>
     </aside>
 
 	<footer>

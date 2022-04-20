@@ -1,251 +1,3 @@
-.site-header {
-  width: 100%;
-  display: flex;
-}
-.site-header nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: relative;
-}
-.site-header nav .line {
-  position: absolute;
-  left: 114px;
-  z-index: 1;
-  fill: rgba(255, 255, 255, 0.25);
-}
-
-.navigation {
-  padding: 0 165px 0 115px;
-  list-style: none;
-  position: relative;
-  background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(35px);
-}
-.navigation li {
-  display: inline-block;
-}
-.navigation a {
-  text-decoration: none;
-  display: inline-block;
-  padding: 37.3px 2px 37.3px 0;
-  margin-right: 42px;
-  color: #FFFFFF;
-  text-transform: uppercase;
-}
-.navigation a span {
-  font-weight: 700;
-  margin-right: 11px;
-}
-.navigation a:hover {
-  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
-}
-.navigation a.selected {
-  border-bottom: 3px solid #FFFFFF;
-}
-.navigation li:last-child a {
-  margin-right: 0;
-}
-
-main.home {
-  padding-top: 251px;
-}
-main.home .intro {
-  width: 450px;
-}
-main.home .btn-main {
-  font-family: "Bellefair", serif;
-  font-size: 32px;
-  line-height: 36.67px;
-  letter-spacing: 2px;
-  color: #0B0D17;
-  cursor: pointer;
-  display: inline-block;
-  position: relative;
-  padding: 119px 62.32px 118.34px 62px;
-  margin-top: 110px;
-  margin-right: 140px;
-  align-self: center;
-  background: #FFFFFF;
-  border-radius: 50%;
-}
-main.home .btn-main::before {
-  content: "";
-  display: inline-block;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 50%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-  transition: .3s ease-in-out;
-}
-main.home .btn-main:hover::before {
-  transform: scale(1.64234);
-}
-
-main.destination {
-  display: block;
-}
-main.destination .planet {
-  width: 445px;
-  height: 445px;
-  margin-top: 97px;
-  margin-left: 65px;
-  flex-shrink: 0;
-  background: url("../assets/destination/image-moon.png");
-}
-main.destination .right-side {
-  width: 445px;
-  margin-right: 163px;
-  margin-top: 98px;
-}
-main.destination .right-side .navigation {
-  background: none;
-  backdrop-filter: none;
-  padding: 0;
-}
-main.destination .right-side .navigation a {
-  padding: 0 0 15px 0;
-  margin-right: 35px;
-  font-size: 16px;
-  letter-spacing: 1.9px;
-  font-family: "Barlow Condensed", sans-serif;
-}
-main.destination .right-side .title {
-  margin: 37px 0 14px 0;
-  line-height: 114.6px;
-}
-main.destination .right-side .specs {
-  display: flex;
-  padding-top: 28px;
-  margin-top: 54px;
-  border-top: 1px solid #383B4B;
-}
-main.destination .right-side .specs .col {
-  display: flex;
-  flex-direction: column;
-}
-main.destination .right-side .specs .left {
-  margin-right: 79px;
-}
-main.destination .right-side .specs .distance, main.destination .right-side .specs .travel {
-  font-family: "Bellefair", serif;
-  letter-spacing: 0.1px;
-}
-
-main.crew .role {
-  opacity: 0.5;
-  text-transform: uppercase;
-  font-weight: 400;
-  margin-top: 154px;
-}
-main.crew .name {
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 15px 0 27px 0;
-}
-main.crew .bio {
-  max-width: 444px;
-  min-height: 160px;
-}
-main.crew .person {
-  margin-top: -14px;
-  min-width: 565px;
-  background: url("../assets/crew/image-douglas-hurley.webp") center bottom no-repeat;
-}
-main.crew .selector {
-  list-style: none;
-  margin-top: 120px;
-}
-main.crew .selector li {
-  display: inline-block;
-}
-main.crew .selector li:not(:last-child) {
-  margin-right: 24px;
-}
-main.crew .selector a {
-  display: inline-block;
-  background: white;
-  width: 15px;
-  height: 15px;
-  border-radius: 50%;
-  opacity: 0.27;
-}
-main.crew .selector a.selected, main.crew .selector a.selected:hover {
-  opacity: 1;
-}
-main.crew .selector a:hover {
-  opacity: 0.5;
-}
-
-main.technology .left-side {
-  flex-direction: column;
-}
-main.technology .sub-left-side {
-  display: flex;
-  margin-top: 137px;
-}
-main.technology .sub-title {
-  text-transform: uppercase;
-}
-main.technology .name {
-  font-style: normal;
-  font-weight: 400;
-  text-transform: uppercase;
-  margin: 15px 0 27px 0;
-}
-main.technology .details {
-  margin-left: 80px;
-}
-main.technology .description {
-  max-width: 470px;
-}
-main.technology .sub-navigation {
-  list-style: none;
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  padding: 0;
-  margin: 0;
-}
-main.technology .sub-navigation li {
-  display: inline-block;
-  width: 80px;
-  height: 80px;
-}
-main.technology .sub-navigation a {
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  font-size: 32px;
-  color: #FFFFFF;
-  line-height: 1.4;
-  padding: 20px 20.6px;
-  border-radius: 50%;
-  border: 1px solid rgba(255, 255, 255, 0.25);
-}
-main.technology .sub-navigation a.selected, main.technology .sub-navigation a.selected:hover {
-  background: #FFFFFF;
-  border-color: #FFFFFF;
-  color: #0B0D17;
-}
-main.technology .sub-navigation a:hover {
-  background: none;
-  border-color: #FFFFFF;
-}
-main.technology .vehicle {
-  width: 515px;
-  margin-top: 60px;
-  background: url("../assets/technology/image-launch-vehicle-portrait.jpg") right top no-repeat;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -253,12 +5,15 @@ main.technology .vehicle {
 }
 
 html {
+  height: auto;
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   display: flex;
   justify-content: center;
-  background: #0B0D19;
+  background: #0B0D19 url("../assets/home/background-home-desktop.jpg") center 0px no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 body {
@@ -266,13 +21,14 @@ body {
   padding: 0;
   font-family: "Bellefair", serif;
   color: #0B0D17;
-  min-height: 900px;
+  height: 100%;
   width: 100vw;
   max-width: 1440px;
-  background: url("../assets/home/background-home-desktop.jpg") center top no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
   z-index: 0;
+}
+
+#preloader {
+  display: none;
 }
 
 .container {
@@ -281,11 +37,9 @@ body {
   padding-left: 55px;
   padding-top: 40px;
   width: 100%;
-}
-
-.right-side {
-  flex-shrink: 0;
-  min-height: 730px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 p {
@@ -338,9 +92,10 @@ nav {
 
 main {
   color: #FFFFFF;
+  height: 100%;
   padding-left: 110px;
+  margin-bottom: 98px;
   display: flex;
-  justify-content: space-between;
 }
 main h5 {
   text-transform: uppercase;
@@ -374,6 +129,725 @@ main p {
   width: 100%;
   justify-content: space-between;
   padding-top: 76px;
+}
+
+.site-header {
+  width: 100%;
+  display: flex;
+}
+.site-header nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding-left: 39px;
+}
+.site-header nav .line {
+  position: absolute;
+  left: 114px;
+  z-index: 1;
+  fill: rgba(255, 255, 255, 0.25);
+}
+
+.navigation {
+  padding: 0 165px 0 115px;
+  list-style: none;
+  position: relative;
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(35px);
+  display: flex;
+}
+.navigation li {
+  display: inline-block;
+  margin-right: 42px;
+}
+.navigation a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 37.3px 2px 37.3px 0;
+  color: #FFFFFF;
+  text-transform: uppercase;
+}
+.navigation a span {
+  font-weight: 700;
+  margin-right: 11px;
+}
+.navigation a:hover {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.5);
+}
+.navigation a.selected {
+  border-bottom: 3px solid #FFFFFF;
+}
+.navigation li:last-of-type {
+  margin-right: 0;
+}
+
+.toggler {
+  /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+  display: none;
+  z-index: 13;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 24px;
+  right: 16px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.hamburger {
+  display: none;
+  position: absolute;
+  z-index: 12;
+  top: 32px;
+  right: 24px;
+  height: 24px;
+  width: 24px;
+  /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+  align-items: center;
+  justify-content: center;
+}
+
+/* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+.hamburger > div {
+  position: relative;
+  top: 0;
+  left: 0;
+  background: #D0D6F9;
+  height: 3px;
+  width: 100%;
+  transition: all  0.4s ease;
+}
+
+/* CREATING THE TOP AND BOTTOM LINES : 
+TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+.hamburger > div::before,
+.hamburger > div::after {
+  content: '';
+  position: absolute;
+  top: -7px;
+  background: #D0D6F9;
+  width: 100%;
+  height: 100%;
+  transition: all  0.4s ease;
+}
+
+.hamburger > div::after {
+  top: 7px;
+}
+
+/* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+.toggler:checked + .hamburger > div {
+  background: rgba(0, 0, 0, 0);
+}
+
+.toggler:checked + .hamburger > div::before {
+  top: 0;
+  transform: rotate(45deg);
+  /*     background: black; */
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+.toggler:checked + .hamburger > div::after {
+  top: 0;
+  transform: rotate(135deg);
+  /*     background: black; */
+}
+
+input.toggler:checked ~ .navigation.top {
+  transform: translatex(-100%);
+}
+
+.overlay {
+  display: none;
+  background: rgba(0, 0, 0, 0.351);
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 1380px) {
+  .line {
+    display: none;
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .container {
+    padding-top: 0;
+  }
+
+  .navigation.top {
+    padding: 0 46px 0 48px;
+  }
+  .navigation.top li {
+    margin-right: 32px;
+  }
+  .navigation.top a {
+    font-size: 14px;
+  }
+  .navigation.top a span {
+    display: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .navigation.top {
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    right: -62%;
+    height: 100vh;
+    width: 62%;
+    flex-direction: column;
+    font-size: 16px;
+    padding: 188px 0 0;
+    transition: transform .4s ease;
+  }
+  .navigation.top li {
+    margin: 0;
+    border: 3px solid transparent;
+    padding-left: 32px;
+    cursor: pointer;
+  }
+  .navigation.top li:hover {
+    background: rgba(255, 255, 255, 0.11);
+  }
+  .navigation.top a {
+    padding: 20px 0 12px;
+    border-bottom: 3px solid transparent;
+  }
+  .navigation.top a span {
+    display: inline-block;
+  }
+  .navigation.top a.selected {
+    border-bottom: 3px solid white;
+  }
+  .navigation.top a:hover {
+    border-bottom: 3px solid transparent;
+  }
+  .navigation.top a.selected:hover {
+    border-bottom: 3px solid white;
+  }
+
+  .symbol {
+    margin-top: 21px;
+  }
+
+  .toggler {
+    display: inline-block;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .sub-navigation {
+    display: inline-block;
+  }
+}
+.container.home {
+  height: auto;
+}
+
+main.home {
+  padding-top: 251px;
+  justify-content: space-between;
+}
+main.home .intro {
+  width: 450px;
+}
+main.home .btn-main {
+  font-family: "Bellefair", serif;
+  font-size: 32px;
+  line-height: 36.67px;
+  letter-spacing: 2px;
+  color: #0B0D17;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  padding: 119px 62.32px 118.34px 62px;
+  margin-top: 110px;
+  margin-right: 140px;
+  align-self: center;
+  background: #FFFFFF;
+  border-radius: 50%;
+}
+main.home .btn-main::before {
+  content: "";
+  display: inline-block;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  transition: .3s ease-in-out;
+}
+main.home .btn-main:hover::before {
+  transform: scale(1.64234);
+}
+
+@media only screen and (max-width: 1050px) {
+  main.home {
+    flex-direction: column;
+    max-width: 450px;
+    padding-left: 0;
+    padding-right: 0;
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 106px;
+  }
+  main.home h5 {
+    font-size: 20px;
+  }
+  main.home p {
+    font-size: 16px;
+  }
+  main.home .btn-main {
+    padding: 102.7px 46.16px 102.64px 46.17px;
+    margin: 156px 0 90px 0;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main.home .intro {
+    width: 100%;
+    padding: 24px;
+  }
+  main.home h5 {
+    font-size: 16px;
+  }
+  main.home h1 {
+    font-size: 80px;
+    margin: 16px 0;
+    line-height: 100px;
+  }
+  main.home p {
+    font-size: 15px;
+  }
+  main.home .btn-main {
+    padding: 56.68px 25.6px 56.68px 25.6px;
+    margin: 81px 0 48px 0;
+    font-size: 20px;
+  }
+}
+main.destination {
+  display: block;
+}
+main.destination .content {
+  gap: 10px;
+}
+main.destination .planet {
+  width: 445px;
+  height: 445px;
+  margin-top: 97px;
+  margin-left: 65px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  background: url("../assets/destination/image-moon.png");
+  background-size: 100% auto;
+}
+main.destination .right-side {
+  max-width: 445px;
+  margin: 98px auto 0;
+}
+main.destination .right-side p {
+  margin-right: 10px;
+}
+main.destination .right-side .navigation {
+  background: none;
+  backdrop-filter: none;
+  padding: 0;
+}
+main.destination .right-side .navigation a {
+  padding: 0 0 15px 0;
+  font-size: 16px;
+  letter-spacing: 1.9px;
+  font-family: "Barlow Condensed", sans-serif;
+}
+main.destination .right-side .title {
+  margin: 37px 0 14px 0;
+  line-height: 114.6px;
+}
+main.destination .right-side .description {
+  margin-bottom: 28px;
+  padding-bottom: 54px;
+  border-bottom: 1px solid #383B4B;
+}
+main.destination .right-side .specs {
+  display: flex;
+}
+main.destination .right-side .specs .col {
+  display: flex;
+  flex-direction: column;
+}
+main.destination .right-side .specs .left {
+  margin-right: 79px;
+}
+main.destination .right-side .specs .distance, main.destination .right-side .specs .travel {
+  font-family: "Bellefair", serif;
+  letter-spacing: 0.1px;
+  color: #FFFFFF;
+}
+
+@media only screen and (max-width: 1050px) {
+  main.destination .content {
+    gap: 0;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  main.destination .left-side .planet {
+    width: 300px;
+    height: 300px;
+    margin-top: 60px;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  main.destination .right-side .description {
+    margin-right: 0;
+    padding-bottom: 49px;
+    text-align: center;
+    letter-spacing: 1px;
+  }
+  main.destination .right-side .specs {
+    width: 100%;
+    justify-content: space-evenly;
+  }
+  main.destination .right-side .specs .left {
+    margin-right: 0;
+  }
+  main.destination .right-side .subheading2 {
+    margin-right: 0;
+  }
+  main.destination .right-side .col {
+    align-items: center;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main.destination .left-side .planet {
+    width: 170px;
+    height: 170px;
+    margin-top: 32px;
+  }
+  main.destination .right-side .description {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+@media only screen and (max-width: 450px) {
+  main.destination .right-side .specs {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+main.crew {
+  margin-bottom: 0;
+}
+main.crew .role {
+  opacity: 0.5;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-top: 154px;
+}
+main.crew .name {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0 27px 0;
+}
+main.crew .bio {
+  max-width: 444px;
+  min-height: 160px;
+  margin-right: 10px;
+}
+main.crew .person {
+  margin-top: -14px;
+  min-width: 565px;
+  background: url("../assets/crew/image-douglas-hurley.webp") center bottom no-repeat;
+}
+main.crew .selector {
+  list-style: none;
+  margin-top: 120px;
+  margin-bottom: 94px;
+}
+main.crew .selector li {
+  display: inline-block;
+}
+main.crew .selector li:not(:last-child) {
+  margin-right: 24px;
+}
+main.crew .selector a {
+  display: inline-block;
+  background: white;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  opacity: 0.27;
+}
+main.crew .selector a.selected, main.crew .selector a.selected:hover {
+  opacity: 1;
+}
+main.crew .selector a:hover {
+  opacity: 0.5;
+}
+
+@media only screen and (max-width: 1050px) {
+  .container.crew {
+    height: 100%;
+  }
+
+  main.crew .content {
+    justify-content: space-between;
+  }
+  main.crew .left-side .role {
+    font-size: 24px;
+    margin-top: 60px;
+  }
+  main.crew .left-side .name {
+    font-size: 40px;
+  }
+  main.crew .left-side .bio {
+    font-size: 16px;
+    text-align: center;
+    max-width: 458px;
+    min-height: 96px;
+    line-height: 24px;
+    letter-spacing: 1.6px;
+  }
+  main.crew .left-side .selector {
+    margin: 40px 0;
+  }
+  main.crew .left-side .selector a {
+    width: 10px;
+    height: 10px;
+  }
+  main.crew .right-side {
+    min-width: auto;
+    width: 456px;
+    min-height: 572px;
+    background-size: contain;
+    margin: 0 auto;
+    border-bottom: 1px solid #383B4B;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main.crew .left-side .role {
+    font-size: 16px;
+    text-align: center;
+    margin-top: 0;
+  }
+  main.crew .left-side .name {
+    font-size: 24px;
+    text-align: center;
+  }
+  main.crew .left-side .bio {
+    font-size: 15px;
+    min-height: 144px;
+  }
+  main.crew .left-side .selector {
+    margin: 32px 0;
+  }
+  main.crew .right-side {
+    width: 100%;
+    min-height: 222px;
+    margin-top: 32px;
+  }
+}
+main.technology .left-side {
+  flex-direction: column;
+}
+main.technology .sub-left-side {
+  display: flex;
+  margin-top: 137px;
+}
+main.technology .sub-title {
+  text-transform: uppercase;
+}
+main.technology .name {
+  font-style: normal;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin: 15px 0 27px 0;
+}
+main.technology .details {
+  margin-left: 80px;
+}
+main.technology .description {
+  max-width: 470px;
+  margin-right: 10px;
+}
+main.technology .sub-navigation {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  padding: 0;
+  margin: 0;
+}
+main.technology .sub-navigation li {
+  display: inline-block;
+  width: 80px;
+  height: 80px;
+}
+main.technology .sub-navigation a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  font-size: 32px;
+  color: #FFFFFF;
+  line-height: 1.4;
+  border-radius: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.25);
+}
+main.technology .sub-navigation a.selected, main.technology .sub-navigation a.selected:hover {
+  background: #FFFFFF;
+  border-color: #FFFFFF;
+  color: #0B0D17;
+}
+main.technology .sub-navigation a:hover {
+  background: none;
+  border-color: #FFFFFF;
+}
+main.technology .vehicle {
+  width: 515px;
+  height: 507px;
+  margin-top: 60px;
+  background: url("../assets/technology/image-launch-vehicle-portrait.jpg") center top no-repeat;
+}
+
+@media only screen and (max-width: 1050px) {
+  main.technology .sub-left-side {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 0;
+  }
+  main.technology .sub-navigation {
+    flex-direction: row;
+    margin: 56px 0 44px;
+  }
+  main.technology .sub-navigation li {
+    width: 60px;
+    height: 60px;
+  }
+  main.technology .sub-navigation a {
+    font-size: 24px;
+  }
+  main.technology .details {
+    margin-left: 0;
+    text-align: center;
+  }
+  main.technology .sub-title {
+    font-size: 16px;
+  }
+  main.technology .name {
+    font-size: 40px;
+    margin-bottom: 16px;
+  }
+  main.technology .description {
+    font-size: 16px;
+  }
+  main.technology .vehicle {
+    background-image: url("../assets/technology/image-launch-vehicle-landscape.jpg");
+    background-size: 100% auto;
+    background-position-y: bottom;
+    width: calc(100% + 78px);
+    height: calc(100vw/2.4);
+    margin: 60px -78px 0;
+    max-width: none;
+  }
+}
+@media only screen and (max-width: 600px) {
+  main.technology .sub-navigation {
+    margin: 34px 0 26px;
+  }
+  main.technology .sub-navigation li {
+    width: 40px;
+    height: 40px;
+  }
+  main.technology .sub-navigation a {
+    font-size: 16px;
+  }
+  main.technology .sub-title {
+    font-size: 14px;
+  }
+  main.technology .name {
+    font-size: 24px;
+    margin-top: 9px;
+  }
+  main.technology .description {
+    font-size: 15px;
+  }
+  main.technology .vehicle {
+    margin: 33px -48px 0;
+    width: calc(100% + 48px);
+  }
+}
+@media only screen and (max-width: 1050px) {
+  .container {
+    padding-left: 0;
+  }
+
+  main {
+    padding-left: 39px;
+    padding-right: 39px;
+  }
+  main .content {
+    gap: 0;
+    flex-direction: column;
+    padding-top: 40px;
+  }
+  main .left-side {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .left-side .title {
+    margin-right: auto;
+    font-size: 20px;
+  }
+  main .right-side {
+    display: flex;
+    max-width: 573px;
+    margin: 53px auto 0;
+    flex-direction: column;
+    align-items: center;
+  }
+  main .right-side .title {
+    font-size: 80px;
+    margin-top: 32px;
+    margin-bottom: 8px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  html {
+    background-image: url("../assets/home/background-home-tablet.jpg");
+  }
+}
+@media only screen and (max-width: 600px) {
+  main {
+    padding: 0 24px;
+  }
+  main .content {
+    padding-top: 34px;
+  }
+  main .left-side .title {
+    font-size: 16px;
+    margin-right: 0;
+  }
+  main .right-side {
+    margin-top: 26px;
+  }
+  main .right-side .title {
+    font-size: 56px;
+    margin-top: 20px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

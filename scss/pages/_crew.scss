@@ -1,6 +1,6 @@
-main.crew {
 
-    
+main.crew {
+    margin-bottom: 0;
 
     .role {
         opacity: 0.5;
@@ -22,6 +22,7 @@ main.crew {
     .bio {
         max-width: 444px;
         min-height: 160px;
+        margin-right: 10px;
     }
 
     .person {
@@ -34,6 +35,7 @@ main.crew {
     & .selector {
         list-style: none;
         margin-top: 120px;
+        margin-bottom: 94px;
 
         li {
             display: inline-block;
@@ -60,7 +62,98 @@ main.crew {
                 opacity: 0.5;
             }
         }
+    }
+}
 
+@media only screen and($breakpoint-1050) {
+    .container.crew {
+        height: 100%;
     }
 
+    main.crew {
+
+        .content {
+            justify-content: space-between;
+        }
+
+        .left-side {
+
+            .role {
+                font-size: 24px;
+                margin-top: 60px;
+            }
+
+            .name {
+                font-size: 40px;
+            }
+
+            .bio {
+                font-size: 16px;
+                text-align: center;
+                max-width: 458px;
+                min-height: 96px;
+                line-height: 24px;
+                letter-spacing: 1.6px;
+                // min-height: auto;
+            }
+
+            .selector {
+                margin: 40px 0;
+
+                a {
+                    width: 10px;
+                    height: 10px;
+                }
+            }
+        }
+
+        .right-side {
+            min-width: auto;
+            width: 456px;
+            min-height: 572px;
+            background-size: contain;
+            margin: 0 auto;
+            border-bottom: 1px solid $color-4;
+        }
+    }
+}
+
+@media only screen and($breakpoint-600) {
+    main.crew {
+        
+        .left-side {
+
+            .role {
+                font-size: 16px;
+                text-align: center;
+                margin-top: 0;
+            }
+            
+            .name {
+                font-size: 24px;
+                text-align: center;
+            }
+            
+            .bio {
+                font-size: 15px;
+                min-height: 144px;
+            }
+
+            .selector {
+                margin: 32px 0;
+            }
+        }
+
+        .right-side {
+            width: 100%;
+            min-height: 222px;
+            margin-top: 32px;
+        }
+    }
+}
+
+@media only screen and($breakpoint-450) {
+    main.crew {
+        
+    }
 }

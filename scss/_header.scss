@@ -10,6 +10,7 @@
         justify-content: space-between;
         align-items: center;
         position: relative;
+        padding-left: 39px;
         
 
         .line {
@@ -30,17 +31,19 @@
 
     background: rgba(255, 255, 255, 0.04);
     backdrop-filter: blur(35px);
+    display: flex;
     
 
     li {
         display: inline-block;
+        margin-right: 42px;
     }
 
     a {
         text-decoration: none;
         display: inline-block;
         padding: 37.3px 2px 37.3px 0;
-        margin-right: 42px;
+
 
         color: $color-3;
         text-transform: uppercase;
@@ -61,9 +64,205 @@
         }
     }
 
-    li:last-child a{
+    li:last-of-type{
         margin-right: 0;
     }
 }
+.toggler{
+    /* ALWAYS KEEPING THE TOGGLER OR THE CHECKBOX ON TOP OF EVERYTHING :  */
+    display: none;
+    z-index: 13;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    top: 24px;
+    right: 16px;
+    cursor: pointer;
+    opacity: 0;
+    //   background: white;
+  }
+  
+  .hamburger{
+    display: none;
+    position: absolute;
+    z-index: 12;
+    top: 32px;
+    right: 24px;
+    height: 24px;
+    width: 24px;
+//   padding: 0.6rem;
+    
+    /* FOR DISPLAYING EVERY ELEMENT IN THE CENTER : */
+    
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* CREATING THE MIDDLE LINE OF THE HAMBURGER : */
+  
+  .hamburger > div{
+       position: relative;
+       top: 0;
+       left: 0;
+       background: $color-2;
+       height: 3px;
+       width: 100%;
+       transition: all  0.4s ease;
+  }
+  
+  /* CREATING THE TOP AND BOTTOM LINES : 
+  TOP AT -10PX ABOVE THE MIDDLE ONE AND BOTTOM ONE IS 10PX BELOW THE MIDDLE: */
+  
+  .hamburger > div::before,
+  .hamburger > div::after{
+      content: '';
+      position: absolute;
+      top: -7px;
+      //   background: white;
+      background: $color-2;
+      width: 100%;
+      height: 100%;
+      transition: all  0.4s ease;
+  }
+  
+  .hamburger > div::after{
+    top: 7px;
+  }
+
+  /* IF THE TOGGLER IS IN ITS CHECKED STATE, THEN SETTING THE BACKGROUND OF THE MIDDLE LAYER TO COMPLETE BLACK AND OPAQUE :  */
+
+.toggler:checked + .hamburger > div{
+    background: rgba(0,0,0,0);
+}
+
+.toggler:checked + .hamburger > div::before{
+    top: 0;
+    transform: rotate(45deg);
+/*     background: black; */
+}
+
+/* AND ROTATING THE TOP AND BOTTOM LINES :  */
+
+.toggler:checked + .hamburger > div::after{
+    top: 0;
+    transform: rotate(135deg);
+/*     background: black; */
+}
+
+input.toggler {
+    
+    &:checked {
+      & ~ .navigation.top {
+         transform: translatex(-100%);
+      }    
+    }
+  }
+
+  .overlay {
+      display: none;
+      background: rgba(0, 0, 0, 0.351);
+      height: 100%;
+      width: 100%;
+      position: fixed;
+      top: 0;
+      left: 0;
+      z-index: 10;
+  }
 
 
+@media only screen and($breakpoint-1380) {
+    .line {
+        display: none;
+    }
+}
+
+@media only screen and($breakpoint-1050) {
+    .container {
+        padding-top: 0;
+    }
+    
+    .navigation.top {
+        padding: 0 46px 0 48px;
+
+        li {
+            margin-right: 32px;
+        }
+        a {
+            font-size: 14px;
+
+            span {
+                display: none;
+            }
+        }
+    }
+}
+
+@media only screen and($breakpoint-600) {
+    .navigation.top {
+        position: fixed;
+        z-index: 11;
+        top: 0;
+        right: -62%;
+        height: 100vh;
+        width: 62%;
+        flex-direction: column;
+        font-size: 16px;
+        padding: 188px 0 0;
+        transition: transform .4s ease;
+        // display: none;
+        // transform: translateX(-100%) ;
+
+        li {
+            margin: 0;
+            border: 3px solid transparent;
+            padding-left: 32px;
+            cursor: pointer;
+                        
+            &:hover {
+                background: rgba(255, 255, 255, 0.11);
+            }
+        }
+        
+        a {
+            padding: 20px 0 12px;
+            border-bottom: 3px solid transparent;
+            
+            span {
+                display: inline-block;
+            }
+
+            &.selected {
+                border-bottom: 3px solid white;
+            }
+            
+            &:hover {
+                border-bottom: 3px solid transparent;
+            }
+            
+            &.selected:hover {
+                border-bottom: 3px solid white;
+            }
+
+            &:active {
+                
+            }
+        }
+
+	}
+
+	.symbol {
+		margin-top: 21px;
+	}
+
+	.toggler {
+		display: inline-block;
+	}
+
+    .hamburger {
+        display: flex;
+    }
+
+    .sub-navigation {
+        display: inline-block;
+    }
+}

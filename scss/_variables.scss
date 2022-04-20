@@ -3,11 +3,22 @@ $color-1:    #0B0D17;
 $color-2:    #D0D6F9;
 $color-3:    #FFFFFF;
 $color-4:    #383B4B;
+$color-5:    #0B0D19;
 
 //----- FONT -------------------------
 
 $font-family-bellefair: 'Bellefair', serif;
 $font-family-barlow: 'Barlow Condensed', sans-serif;
+
+//------ Breakpoints-------------------
+
+$breakpoint-1380: 'max-width: 1380px';
+$breakpoint-1050: 'max-width: 1050px';
+$breakpoint-768: 'max-width: 768px';
+$breakpoint-600: 'max-width: 600px';
+$breakpoint-450: 'max-width: 450px';
+
+
 
 
 //------------------------
