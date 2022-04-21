@@ -57,7 +57,7 @@ String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() 
     checkScreen();
     $(window).on('resize', function () {
         checkScreen();
-        setBackgroundSize();
+        // setBackgroundSize();
         // console.log(breakpoint)
     });
 
@@ -73,11 +73,11 @@ String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() 
         }
     };
 
-    setBackgroundSize();
+    // setBackgroundSize();
 
 
     //aktivovanie parllax efektu na pozadie
-    $('html').parallax({ friction: 0.4 });
+    // $('html').parallax({ friction: 0.4 });
 
 
     //fetch html data
@@ -127,7 +127,7 @@ String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() 
                     .addClass('container ' + mainClass);
                 $('main').html(newData.html())
                     .attr({ class: mainClass });
-                setBackgroundSize();
+                // setBackgroundSize();
             });
         })
             .animate({ opacity: 1 }, 300);
@@ -163,7 +163,7 @@ String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() 
                         .addClass('container ' + mainClass);
                     $('main').html(newData.html())
                         .attr({ class: mainClass });
-                    setBackgroundSize();
+                    // setBackgroundSize();
                     if (window.matchMedia('(min-width: 1051px)').matches) { $('.vehicle').appendTo('.content') }
                     else { $('.vehicle').insertAfter('.title') };
 
