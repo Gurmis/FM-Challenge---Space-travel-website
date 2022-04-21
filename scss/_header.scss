@@ -30,13 +30,9 @@
     position: relative;
 
     background: rgba(255, 255, 255, 0.04);
-    -webkit-backdrop-filter: blur(2.1875rem);
-            backdrop-filter: blur(2.1875rem);
-    display: -webkit-box;
-    display: -ms-flexbox;
+    backdrop-filter: blur(2.1875rem);
     display: flex;
     
-
     li {
         display: inline-block;
         margin-right: 2.625rem;
@@ -245,12 +241,7 @@ input.toggler {
             &.selected:hover {
                 border-bottom: .1875rem solid white;
             }
-
-            &:active {
-                
-            }
         }
-
 	}
 
 	.symbol {

@@ -53,12 +53,6 @@ body {
     
 }
 
-.right-side {
-	// flex-shrink: 0;
-	// min-height: 45.625rem;
-}
-
-
 p {
 	font-size: 1.125rem;
 	line-height: 2rem;
@@ -169,14 +163,7 @@ main {
 
 
 @media only screen and($breakpoint-1050) {
-	html {
-		// background-size: 90rem calc(100% + 30vh);
-	}
-	
-	body {
-		// min-height: 73.75rem;
-	}	
-	
+		
 	.container {
 		padding-left: 0;
 	}
@@ -227,10 +214,6 @@ main {
 }
 
 @media only screen and($breakpoint-600) {
-	body {
-		// min-height: 41.6875rem;
-	}
-
 	main {
         padding: 0 1.5rem;
 
@@ -258,12 +241,23 @@ main {
 
 
 
-//ulohy na vyriesenie
-
-//extension na konverziu jednotiek px/rem
-//extension na sass
 
 
+/** skuska better comments extension
+* * servas
+* ! serus
+* ? otazka 
+*/
+
+/**
+
+1. upravit sirku bg jednak nad 1050 - musi byt 100%, ktora sa zmeni pri 1050px na auto....
+a potom pri 768px znova na 100% po cca 600px(alebo iny breakpoint medzitym, kde uz nebude 
+vidno cierne okraje)...a potom zase auto...
+tomu este moze pomoct mierne predlzenie stranok cez margin bottom alebo tak//2. prefixy
 
 
-//3. vyriesit parallax - aby neboli ziadne medzery po zoscrollovani
+
+
+*/
+
