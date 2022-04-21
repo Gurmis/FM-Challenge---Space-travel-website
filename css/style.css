@@ -432,7 +432,6 @@ main.home .btn-main {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  background: #FFFFFF;
   border-radius: 50%;
 }
 
