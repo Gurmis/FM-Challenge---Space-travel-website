@@ -24,15 +24,19 @@ String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() 
         if (window.matchMedia('(min-width: 1051px)').matches) { breakpoint = 'extraLarge' }
         else if ((window.matchMedia('(min-width: 769px) and (max-width: 1050px)')).matches) { breakpoint = 'desktop' }
         else if ((window.matchMedia('(min-width: 601px) and (max-width: 768px)')).matches) { breakpoint = 'tablet' }
-        else if ((window.matchMedia('(min-width: 451px) and (max-width: 600px)')).matches) { breakpoint = 'mobile' }
-        else if ((window.matchMedia('(max-width: 450px)')).matches) { breakpoint = 'extraSmall' };
+        else if ((window.matchMedia('(min-width: 526px) and (max-width: 600px)')).matches) { breakpoint = 'largeMobile' }
+        else if ((window.matchMedia('(min-width: 451px) and (max-width: 525px)')).matches) { breakpoint = 'mediumMobile' }
+        else if ((window.matchMedia('(min-width: 372px) and (max-width: 450px)')).matches) { breakpoint = 'smallMobile' }
+        else if ((window.matchMedia('(max-width: 371px)')).matches) { breakpoint = 'extraSmall' };
         // console.log(breakpoint)
 
         bgSizeWidth = {
             extraLarge: '100%',
             desktop: 'auto',
             tablet: '100%',
-            mobile: 'auto',
+            largeMobile: '100%',
+            mediumMobile: 'auto',
+            smallMobile: 'auto',
             extraSmall: 'auto'
         };
 
@@ -40,7 +44,9 @@ String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() 
             extraLarge: 'desktop',
             desktop: 'desktop',
             tablet: 'tablet',
-            mobile: 'tablet',
+            largeMobile: 'tablet',
+            mediumMobile: 'tablet',
+            smallMobile: 'tablet',
             extraSmall: 'tablet'
         };
 

@@ -239,6 +239,31 @@ main {
     }
 }
 
+@media only screen and($breakpoint-370) {
+	main {
+		.left-side {
+			.title {
+				span {
+					display: none;
+				}
+			}
+		}
+
+		.right-side {
+			.navigation {
+				li {
+					margin-right: 1.525rem;
+				}
+
+				li:last-of-type{
+					margin-right: 0;
+				}
+			}
+		}
+	}
+
+}
+
 
 
 

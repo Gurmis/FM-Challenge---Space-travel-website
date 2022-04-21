@@ -1026,6 +1026,18 @@ main.technology .vehicle {
   }
 }
 
+@media only screen and (max-width: 370px) {
+  main .left-side .title span {
+    display: none;
+  }
+  main .right-side .navigation li {
+    margin-right: 1.525rem;
+  }
+  main .right-side .navigation li:last-of-type {
+    margin-right: 0;
+  }
+}
+
 /** skuska better comments extension
 * * servas
 * ! serus
