@@ -1,20 +1,6 @@
 String.prototype.capitalize = function () { return this.charAt(0).toUpperCase() + this.slice(1); };
 (function ($) {
 
-    // nastavenie spravnej velkosti pozadia pri nacitani domovskej stranky
-    // var bgWidth = window.matchMedia('(min-width: 601px) and (max-width: 768px)').matches? '100%' : 'auto',
-    //     heightVhDifference = ($('html').height()-window.innerHeight)*0.4,
-    //     bgHeight = $('html').height()>window.innerHeight? 'calc(100% + ' + heightVhDifference.toString() + 'px)' : 'calc(100%)'
-
-    // $('html').css('backgroundSize', bgWidth + ' ' + bgHeight);
-
-    //nastavenie spravnej sirky pozadia pri zmene velkosti okna
-    // $(window).on('resize', function(){
-    //     var bgWidth = window.matchMedia('(min-width: 601px) and (max-width: 768px)').matches? '100%' : 'auto';
-
-    //     $('html').css('backgroundSize', bgWidth + ' ' + bgHeight);
-    // });
-
     //breakpoints
     var breakpoint,
         bgSizeWidth,
