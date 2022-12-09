@@ -1,6 +1,6 @@
 ## :: Space travel :: website
 ---
-I did this website from figma design made by Kevin Powell.
+I've done this website based on figma design made by Kevin Powell.
 
 I was experimenting mainly with responsive design, jquery, ajax and parallax effect.
 
